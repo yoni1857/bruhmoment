@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bruh Sound Effect #2</title>
+</head>
+
+<body>
+
+    <audio id="bruhsound">
+        <source src="./Bruh Sound Effect 2.mp3" type="audio/mpeg">
+
+    </audio>
+    <center>
+        <h1>BRUH</h1>
+    </center>
+    <script src="https://code.createjs.com/1.0.0/soundjs.min.js"></script>
+    <script>
+        function Bruh() {
+            var bruhsound = document.getElementById("bruhsound");
+            bruhsound.play();
+            setTimeout(Bruh, 1000)
+        }
+
+        document.addEventListener("load", Bruh());
+    </script>
+</body>
+
+</html>
